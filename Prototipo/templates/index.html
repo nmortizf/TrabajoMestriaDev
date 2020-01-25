@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<link rel="stylesheet" href='/static/style.css' />
+	</head>
+   <body>
+      <form action = "{{ url_for('upload_image_file') }}" method = "POST" 
+         enctype = "multipart/form-data">
+		 <br>
+			<h1><u>SOFTWARE RECONOCIMIENTO GESTOS UNAL</u></h1>
+		 <br>		 
+
+			<h3>HOLA, Por favor sigue las siguientes instrucciones:</h3>
+				
+			
+				<li>Selecciona la imagen a traducir en el botón seleccionar</li>
+				<li>Asegurate que este bien la ruta del archivo</li>	
+				<li>Da click en el botón <b>TRADUCIR</b></li>
+			
+		 		
+		  <br>
+		 <input type = "file"  name = "file" size="120" required/>		 
+		 <br>
+		 <br>
+         <input type = "submit" class="button" value="TRADUCIR"/>
+		 <br>
+		 <br>
+		 <img src="{{ url_for('static', filename='Imagen/escudo2.jpg') }}" width="300" height="250">
+      </form>
+   </body>
+</html>

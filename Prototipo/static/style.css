@@ -1,0 +1,34 @@
+body {
+    background: lightblue;
+    color: black;
+	text-align:center;
+}
+
+h1{
+	color: #0000A0;	
+}
+
+.button {
+  background-color: #008080;  
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #004080}
+
+.button:active {
+  background-color: #008080;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+

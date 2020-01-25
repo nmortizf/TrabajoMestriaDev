@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<link rel="stylesheet" href='/static/style.css' />
+	</head>
+   <body>
+      <form action = "{{ url_for('come_back') }}" method = "POST" 
+         enctype = "multipart/form-data">	
+			<br>
+			<h1><u>SOFTWARE RECONOCIMIENTO GESTOS UNAL</u></h1>			
+			
+			<img src="{{ url_for('static', filename='Imagen/image_name.jpg') }}" width="auto" height="auto">		
+						
+			<h2>La seña es {{nombre}}!</h2>
+			
+         <input type = "submit" class="button" value="Ir a HOME"/>
+      </form>
+	  
+   </body>
+</html>
